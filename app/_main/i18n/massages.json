@@ -1,20 +1,10 @@
 {
 	"Th": {
-		"fullname": "ชื่อ-นามสกุล",
-		"name": "ชื่อ",
-		"lastname": "นามสกุล",
-		"code": "รหัสนักศึกษา",
-		"id_card": "เลขประจำตัวระชาชน",
-		"major": "สาขาวิชา",
-		"agency": "สำนักวิชา"
+		"home": "หน้าแรก",
+		"webname": "ชื่อเว็บไซต์"
 	},
 	"En": {
-		"fullname": "Name - Surname",
-		"name": "Name",
-		"lastname": "Surname",
-		"code": "Student's ID",
-		"id_card": "Identification",
-		"major": "Major",
-		"agency": "Faculty"
+		"home": "Home",
+		"webname": "Website name"
 	}
 }

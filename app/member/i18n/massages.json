@@ -1,20 +1,16 @@
-{
-    "Th": {
-        "fullname": "ชื่อ-นามสกุล",
-        "name": "ชื่อ",
+{"Th": {
+        "name": "ชื่อจริง",
         "lastname": "นามสกุล",
-        "code": "รหัสนักศึกษา",
-        "id_card": "เลขประจำตัวระชาชน",
-        "major": "สาขาวิชา",
-        "agency": "สำนักวิชา"
-    },
-    "En": {
-        "fullname": "Name - Surname",
-        "name": "Name",
-        "lastname": "Surname",
-        "code": "Student's ID",
-        "id_card": "Identification",
-        "major": "Major",
-        "agency": "Faculty"
+        "phone": "เบอร์โทรศัพท์",
+        "email": "อีเมล",
+        "gender": "เพศ @{1: ชาย, 2: หญิง}",
+        "birthday": "วันเกิด"
+    },"En": {
+        "name": "name",
+        "lastname": "lastname",
+        "phone": "phone",
+        "email": "email",
+        "gender": "gender",
+        "birthday": "birthday"
     }
 }

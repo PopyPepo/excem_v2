@@ -1,24 +1,26 @@
 <?php
 function i18nmassages($conn, $tableIns, $fileIns){
-    $txt = '{
-    "Th": {
-        "fullname": "ชื่อ-นามสกุล",
-        "name": "ชื่อ",
-        "lastname": "นามสกุล",
-        "code": "รหัสนักศึกษา",
-        "id_card": "เลขประจำตัวระชาชน",
-        "major": "สาขาวิชา",
-        "agency": "สำนักวิชา"
-    },
-    "En": {
-        "fullname": "Name - Surname",
-        "name": "Name",
-        "lastname": "Surname",
-        "code": "Student\'s ID",
-        "id_card": "Identification",
-        "major": "Major",
-        "agency": "Faculty"
+    $c= "";
+    $th = '"Th": {';
+    $en = '"En": {';
+    $table = $tableIns['TABLE_NAME'];
+    $sql = "SHOW FULL COLUMNS FROM ".$table." WHERE Extra!='auto_increment' ";
+	$excute = mysqli_query($conn, $sql);
+	while ($instanc = mysqli_fetch_object($excute)){
+        $label = $instanc->Comment ? $instanc->Comment : $instanc->Field;
+        $th .= $c.'
+        "'.$instanc->Field.'": "'.$label.'"';
+        $en .= $c.'
+        "'.$instanc->Field.'": "'.$instanc->Field.'"';
+        $c = ",";
     }
+
+    $th .= '
+    },';
+    $en .= '
+    }';
+
+    $txt = '{'.$th.$en.'
 }';
     return $txt;
 }
