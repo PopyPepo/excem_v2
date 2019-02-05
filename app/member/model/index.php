@@ -20,11 +20,13 @@ if (file_exists($actionFile)){
 	$json["alert"] = "File not found!!!";
 }
 
+
+
 mysqli_close($conn);
 
 $jsonEncode = json_encode($json);
-if (isset($_GET['callback'])){
-	$callback = $_GET['callback'];
+if (isset($_GET["callback"])){
+	$callback = $_GET["callback"];
 	$jsonEncode = $callback. "(".$jsonEncode.")";
 }
 echo $jsonEncode;

@@ -6,7 +6,7 @@
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<h3>เพิ่มข้อมูลสมาชิค</h3>
+					<h3>เพิ่มข้อมูลสมาชิก</h3>
 				</div>	
 
 				<div class="panel-body">

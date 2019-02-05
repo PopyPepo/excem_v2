@@ -74,14 +74,9 @@
 						</td>
 						<td>{{ fileInstance.file ? tableInstance.TABLE_NAME+fileInstance.file : 'index.php' }}</td>
 						<td>
-							<!-- {ROOT_PROJECT}/{{ fileInstance.path }}/
-							{{ fileInstance.path=='controller' ? '' : tableInstance.TABLE_NAME+'/' }}{{ fileInstance.file ? fileInstance.file : 'index.php' }}
-
-
-							<hr> -->
 
 							{ROOT_PROJECT} / app / {{ tableInstance.TABLE_NAME }} / {{ fileInstance.path }} 
-							/ {{ fileInstance.file ? tableInstance.TABLE_NAME+fileInstance.file : 'index.php' }}
+							/ {{ fileInstance.file ? tableInstance.TABLE_NAME+fileInstance.file : (fileInstance.path=='i18n' ? 'massages.json' : 'index.php') }}
 
 							<!-- {{ fileInstance.path=='controller' ? tableInstance.TABLE_NAME+fileInstance.file : tableInstance.TABLE_NAME+'/'+(fileInstance.file ? tableInstance.TABLE_NAME+fileInstance.file : 'index.php') }} -->
 						</td>

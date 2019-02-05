@@ -19,7 +19,7 @@
 									<th>นามสกุล</th>
 									<th>เบอร์โทรศัพท์</th>
 									<th>อีเมล</th>
-									<th>เพศ [1: ชาย, 2: หญิง]</th>
+									<th>เพศ @{1: ชาย, 2: หญิง}</th>
 									<th class="text-center"><i class="fas fa-bars"></i></th>
 								</tr>
 							</thead>
@@ -31,7 +31,7 @@
 									<td>{{ member.lastname }}</td>
 									<td>{{ member.phone }}</td>
 									<td>{{ member.email }}</td>
-									<td>{{ member.gender }}</td>
+									<td>{{ memberGender[member.gender] }}</td>
 
 									<td class="text-center">
 										<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">

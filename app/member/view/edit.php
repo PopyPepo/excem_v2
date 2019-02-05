@@ -7,7 +7,7 @@
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<h3>แก้ไขข้อมูลสมาชิค
+					<h3>แก้ไขข้อมูลสมาชิก
 						<small>
 							<a href="<?php echo $LINK_URL; ?>member/show/{{memberInstance.id}}/" ng-attr-title="{{ 'กลับไปหน้า แสดงข้อมูล '+memberInstance.name }}">
 								<i class="fas fa-hand-point-left"></i> 
