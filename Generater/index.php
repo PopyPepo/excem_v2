@@ -7,7 +7,7 @@
 
 	<title>Dashboard Generate</title>
 
-	<link href="../assets/css/style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<script src="../assets/js/angular.min.js"></script>
 	<script src="../assets/js/jquery.min.js"></script>
 	<script>angular.module("myApp", []);</script>

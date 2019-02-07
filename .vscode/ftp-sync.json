@@ -1,0 +1,27 @@
+{
+    "remotePath": "./",
+    "host": "203.158.3.10",
+    "username": "studentroot",
+    "password": "student789",
+    "port": 22,
+    "secure": false,
+    "protocol": "ftps",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
