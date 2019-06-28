@@ -1,10 +1,12 @@
 <?php
-include("../../_main/model/_herder.php");
-include("../../_main/model/_connect.php");
+$PATH = isset($PATH) ? $PATH : "../../../";
+include($PATH."conf/_header.php");
+include($PATH."conf/_connect.php");
+$conn->PATH = $PATH;
 
 $action = isset($_GET["action"]) ? $_GET["action"] : null;
 
-$json["date_now"] = date("Y-m-d H:i:s");
+
 
 $actionFile = $action.".php";
 if (file_exists($actionFile)){
@@ -20,7 +22,7 @@ if (file_exists($actionFile)){
 	$json["alert"] = "File not found!!!";
 }
 
-
+$json["date_now"] = date("Y-m-d H:i:s");
 
 mysqli_close($conn);
 

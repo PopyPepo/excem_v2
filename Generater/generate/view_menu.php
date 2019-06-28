@@ -16,7 +16,7 @@ function view_menu($conn, $tableIns, $fileIns){
 	<span class="d-none d-sm-inline">เพิ่มข้อมูล'.$title.'</span>
 </a>';*/ 
 
-	$txt = '<div class="row">
+	/*$txt = '<div class="row">
 	<div class="col-lg-6 p-r-0 mr-auto">
 		<div class="page-header">
 			<div class="page-title">
@@ -45,8 +45,28 @@ function view_menu($conn, $tableIns, $fileIns){
 			</div>
 		</div>
 	</div>
-</div>';
+</div>'; */
 
+	$txt ='<div class="panel-header bg-info-gradient">
+	<div class="page-inner py-5">
+		<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+			<div>
+				<h2 class="text-white pb-2 fw-bold">'.$title.'</h2>
+				<!-- <h5 class="text-white op-7 mb-2">{{ SUBTITLE }}</h5> -->
+			</div>
+			<div class="ml-md-auto py-2 py-md-0">
+				<a href="<?php echo $LINK_URL; ?>'.$table.'/list/" title="รายการข้อมูล'.$title.'" class="btn btn-white btn-border btn-round mr-2">
+					<i class="fas fa-table"></i> 
+					 รายการข้อมูล'.$title.'
+				</a>
+				<a href="<?php echo $LINK_URL; ?>'.$table.'/create/" title="เพิ่มข้อมูล'.$title.'" class="btn btn-secondary btn-round">
+					<i class="fas fa-plus-circle"></i> 
+					 เพิ่มข้อมูล'.$title.'
+				</a>
+			</div>
+		</div>
+	</div>
+</div>';
 
 	return $txt;
 }

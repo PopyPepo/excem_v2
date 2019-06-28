@@ -1,21 +1,23 @@
 <?php $ID = isset($_GET['id']) ? $_GET['id'] : $ID; ?>
 <script src="<?php echo $ASSETS_URL; ?>app/member/controller/memberController.js"></script>
 <?php include "app/member/view/_menu.php"; ?>
-<section id="main-content" ng-controller="memberController" ng-init="memberShow('<?php echo $ID; ?>');">
+<div class="page-inner mt--5" ng-controller="memberController" ng-init="memberShow('<?php echo $ID; ?>');">
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="panel panel-default">
+			<div class="card">
 
-				<div class="panel-heading">
-					<h3>แสดงข้อมูลสมาชิก : {{ "#"+memberInstance.id }}</h3>
+				<div class="card-header">
+					<div class="card-head-row card-tools-still-right">
+						<h4 class="card-title">แสดงข้อมูลสมาชิก : {{ "#"+memberInstance.id }}</h4>
+					</div>
 				</div>
 
-				<div class="panel-body">
+				<div class="card-body">
 					<div class="table-responsive">
-						<table class="table table-striped">
+						<table class="table table-show">
 							<tbody>
 								<tr>
-									<th>ชื่อจริง</th>
+									<th width="2%">ชื่อจริง</th>
 									<td>{{ memberInstance.name }}</td>
 								</tr>
 										
@@ -62,4 +64,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>

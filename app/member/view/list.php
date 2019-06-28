@@ -1,18 +1,20 @@
 <script src="<?php echo $ASSETS_URL; ?>app/member/controller/memberController.js"></script>
 <?php include "app/member/view/_menu.php"; ?>
-<section id="main-content" ng-controller="memberController" ng-init="memberList();">
+<div class="page-inner mt--5" ng-controller="memberController" ng-init="memberList();">
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="panel panel-default">
+			<div class="card">
 
-				<div class="panel-heading">
-					<h3>รายการข้อมูลสมาชิก</h3>
+				<div class="card-header">
+					<div class="card-head-row card-tools-still-right">
+						<h4 class="card-title">รายการข้อมูลสมาชิก</h4>
+					</div>
 				</div>
 
-				<div class="panel-body">
+				<div class="card-body">
 					<div class="table-responsive">
-						<table class="table table-hover table-sm">
-							<thead class="thead-light">
+						<table class="table table-head-bg-secondary table-hover">
+							<thead>
 								<tr>
 									<th>#</th>
 									<th>ชื่อจริง</th>
@@ -51,10 +53,10 @@
 					</div>
 				</div>
 
-				<div class="panel-footer">
+				<div class="card-footer">
 					<div class="row">
 
-						<div class="col-sm-9 form-inline" ng-show="pagination.perPage < pagination.total">
+						<div class="col-sm-8 form-inline" ng-show="pagination.perPage < pagination.total">
 							<div ng-show="pagination.perPage < pagination.total">
 								<button class="btn btn-sm btn-light" ng-click="pagination.page=1;memberList();" ng-disabled="pagination.page<=1"> 
 									<i class="fas fa-angle-double-left"></i>
@@ -64,7 +66,7 @@
 									<i class="fas fa-angle-left"></i>
 								</button>  &nbsp;
 
-								<input class="form-control input-sm" type="number" ng-model="pagination.page" min="1" max="{{ pagination.total/pagination.perPage | roundup }}" ng-change="memberList();" style="text-align: center;">  &nbsp;
+								<input class="form-control form-control-sm" type="number" ng-model="pagination.page" min="1" max="{{ pagination.total/pagination.perPage | roundup }}" ng-change="memberList();" style="text-align: center;">  &nbsp;
 
 								<button class="btn btn-sm btn-light" ng-click="pagination.page=pagination.page+1;memberList();" ng-disabled="pagination.page>=(pagination.total/pagination.perPage | roundup)"> 
 									<i class="fas fa-angle-right"></i>
@@ -77,12 +79,12 @@
 							</div>
 						</div>
 
-						<div class="col-sm-3 form-inline pull-right">
+						<div class="col-sm-4 form-inline ml-auto">
 							<div class="input-group input-group-sm input-group-flat pull-right">
 								<span class="input-group-btn">
 									<button class="btn btn-light btn-sm" type="button">แสดงผล</button>
 								</span>
-								<input type="number" class="form-control input-sm" type="number" id="perPage" ng-model="pagination.perPage" ng-change="memberList();" min="1" style="text-align: center;">
+								<input type="number" class="form-control form-control-sm" type="number" id="perPage" ng-model="pagination.perPage" ng-change="memberList();" min="1" style="text-align: center;">
 								<span class="input-group-btn">
 									<button class="btn btn-light btn-sm" type="button">/ ผลลัพธ์ {{ pagination.total }} รายการ</button>
 								</span>
@@ -95,4 +97,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>

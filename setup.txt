@@ -23,7 +23,7 @@
 		php_value session.auto_start 1
 	</IfModule>
 
-ไฟล์ ./app/_main/model/_connect.php บรรทัดที่ 2-5 แก้ไขการเชื่อมต่อฐานข้อมูล
+ไฟล์ ./conf/_connect.php บรรทัดที่ 2-5 แก้ไขการเชื่อมต่อฐานข้อมูล
 	<?php
 	error_reporting(E_ALL);
 	ob_start();

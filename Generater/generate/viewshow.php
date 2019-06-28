@@ -37,9 +37,9 @@ function viewshow($conn, $tableIns, $fileIns){
 
 	$txt .= '
 
-				<div class="panel-body">
+				<div class="card-body">
 					<div class="table-responsive">
-						<table class="table table-striped">
+						<table class="table table-show">
 							<tbody>';
 								$sql = "SHOW FULL COLUMNS FROM ".$table." WHERE Extra!='auto_increment' ";
 								$excute = mysqli_query($conn, $sql);
@@ -55,7 +55,7 @@ function viewshow($conn, $tableIns, $fileIns){
 										}
 										$txt .= '
 								<tr>
-									<th>'.$label.'</th>
+									<th width="auto">'.$label.'</th>
 									<td>'.$td.'</td>
 								</tr>
 										';
@@ -80,7 +80,7 @@ function viewshow($conn, $tableIns, $fileIns){
 			</div>
 		</div>
 	</div>
-</section>';
+</div>';
 
 
 	return $txt;

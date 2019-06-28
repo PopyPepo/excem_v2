@@ -2,7 +2,7 @@
 function memberInsert($conn){
 	$json = array();
 	if (isset($_POST) && $_POST){
-		include("../../_main/model/getColumname.php");
+		include($conn->PATH."conf/getColumname.php");
 		$field = getColumname($conn, "member");
 		$col = "";	$val = "";	$c="";
 		foreach ($_POST as $key=>$value) {

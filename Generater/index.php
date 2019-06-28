@@ -8,8 +8,8 @@
 	<title>Dashboard Generate</title>
 
 	<link href="style.css" rel="stylesheet">
-	<script src="../assets/js/angular.min.js"></script>
-	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../plugin/angular.min.js"></script>
+	<script src="../plugin/jquery.min.js"></script>
 	<script>angular.module("myApp", []);</script>
 	<script src="generater.js"></script>
 	<style type="text/css">

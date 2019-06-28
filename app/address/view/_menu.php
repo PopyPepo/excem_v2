@@ -1,29 +1,19 @@
-<div class="row">
-	<div class="col-lg-6 p-r-0 title-margin-right">
-		<div class="page-header">
-			<div class="page-title">
-				<h1>address</h1>
+<div class="panel-header bg-info-gradient">
+	<div class="page-inner py-5">
+		<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+			<div>
+				<h2 class="text-white pb-2 fw-bold">ที่อยู่สมาชิค</h2>
+				<!-- <h5 class="text-white op-7 mb-2">{{ SUBTITLE }}</h5> -->
 			</div>
-		</div>
-	</div>
-
-	<div class="col-lg-6 p-l-0 title-margin-left">
-		<div class="page-header">
-			<div class="page-title">
-				<ol class="breadcrumb text-right">
-					<li>
-						<a class="text-info" href="<?php echo $LINK_URL; ?>address/list/" title="รายการข้อมูลaddress">
-							<i class="fas fa-table"></i>
-							รายการข้อมูลaddress
-						</a>
-					</li>
-					<li>
-						<a class="text-success" href="<?php echo $LINK_URL; ?>address/create/" title="เพิ่มข้อมูลaddress">
-							<i class="fas fa-plus-circle"></i> 
-							เพิ่มข้อมูลaddress
-						</a>
-					</li>
-				</ol>
+			<div class="ml-md-auto py-2 py-md-0">
+				<a href="<?php echo $LINK_URL; ?>address/list/" title="รายการข้อมูลที่อยู่สมาชิค" class="btn btn-white btn-border btn-round mr-2">
+					<i class="fas fa-table"></i> 
+					 รายการข้อมูลที่อยู่สมาชิค
+				</a>
+				<a href="<?php echo $LINK_URL; ?>address/create/" title="เพิ่มข้อมูลที่อยู่สมาชิค" class="btn btn-secondary btn-round">
+					<i class="fas fa-plus-circle"></i> 
+					 เพิ่มข้อมูลที่อยู่สมาชิค
+				</a>
 			</div>
 		</div>
 	</div>

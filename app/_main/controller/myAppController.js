@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myApp').controller('myAppController', ["$scope", "$http", "$window", 'ngNotify', function($scope, $http, $window, ngNotify){
-	
+	$scope.SUBTITLE = "";
 	$scope.LANG = LANG;
 	$scope.languageList = ['Th', 'En'];
 	$scope.massages = {};

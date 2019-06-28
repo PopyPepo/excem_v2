@@ -99,26 +99,7 @@ switch ($action) {
 		
 	break;
 
-	case 'createFile':	// $json['params'] = $_GET;
-		/*$table = isset($_GET['forderName']) ? $_GET['forderName'] : 'rs_live';
-		$foder = $_GET['type']=='view' ? "../view/".$table : "../".$_GET['type'];
-		$type = $_GET['type'];
-		$file = $_GET['file'];
-		$filname = $file.($_GET['type']=='taglib' ? '.js' : '.php');
-		$objCreate = fopen($foder.'/'.$filname, 'wb');
-
-		include("generater.php");
-
-		$ex = fwrite($objCreate, $html);
-		if($objCreate){
-			$json['message'] = "File Created.";
-		}
-		else{
-			$json['message'] = "File Not Create.";
-		}
-		fclose($objCreate);*/
-
-		// $json = $_POST;
+	case 'createFile':	
 
 		$table = $_POST['table'];
 		$files = $_POST['files'];

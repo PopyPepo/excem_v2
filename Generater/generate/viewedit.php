@@ -51,7 +51,7 @@ function viewedit($conn, $tableIns, $fileIns){
 
 	$txt.='	
 
-				<div class="panel-body">
+				<div class="card-body">
 					<form name="'.$table.'Edit" method="post" ng-submit="'.$table.'Update();">
 						<?php include("app/'.$table.'/view/_form.php"); ?>';
 

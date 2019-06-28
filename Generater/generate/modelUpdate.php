@@ -30,7 +30,7 @@ function '.$table.'Update($conn){
 	$id = isset($_GET["id"]) ? $_GET["id"] : (isset($_POST["'.$id->Column_name.'"]) ? $_POST["'.$id->Column_name.'"] : null);
 	if ($id && isset($_POST) && $_POST){
 		$col = "";	$val = "";	$c="";
-		include("../../_main/model/getColumname.php");
+		include($conn->PATH."conf/getColumname.php");
 		$field = getColumname($conn, "'.$table.'");
 		
 		if (isset($_POST["'.$id->Column_name.'"])){	unset($_POST["'.$id->Column_name.'"]);}

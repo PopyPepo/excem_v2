@@ -4,7 +4,7 @@ function memberUpdate($conn){
 	$id = isset($_GET["id"]) ? $_GET["id"] : (isset($_POST["id"]) ? $_POST["id"] : null);
 	if ($id && isset($_POST) && $_POST){
 		$col = "";	$val = "";	$c="";
-		include("../../_main/model/getColumname.php");
+		include($conn->PATH."conf/getColumname.php");
 		$field = getColumname($conn, "member");
 		
 		if (isset($_POST["id"])){	unset($_POST["id"]);}

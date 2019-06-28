@@ -6,7 +6,7 @@ align-items: center;
 justify-content: center;
 text-align: center;
 height: 100%;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
 }
 .error-page h1 {
 font-size: 30vh;
@@ -99,7 +99,7 @@ max-width: 70vw;
 		<!--p(data-p='FORBIDDEN') FORBIDDEN-->
 		<h1 data-h1="404">404</h1>
 		<p data-p="NOT FOUND">NOT FOUND</p>
-		<a href="index.php">หน้าแรก</a>
+		<a href="<?php echo $LINK_URL; ?>">หน้าแรก</a>
 		<!--h1(data-h1='500') 500-->
 		<!--p(data-p='SERVER ERROR') SERVER ERROR-->
 	</div>

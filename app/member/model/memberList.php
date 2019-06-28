@@ -2,7 +2,7 @@
 function memberList($conn){
 	$json = array();
 	
-	$perPage = isset($_GET["perPage"]) ? $_GET["perPage"] : 10;
+	$perPage = isset($_GET["perPage"]) ? $_GET["perPage"] : 3;
 	$page = isset($_GET["page"]) ? $_GET["page"] : 1;
 	$pageStart = ($page-1)*$perPage;
 
