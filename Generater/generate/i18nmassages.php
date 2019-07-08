@@ -1,9 +1,10 @@
 <?php
 function i18nmassages($conn, $tableIns, $fileIns){
+$table = $tableIns['TABLE_NAME'];
     $c= "";
     $th = '"Th": {';
     $en = '"En": {';
-    $table = $tableIns['TABLE_NAME'];
+    
     $sql = "SHOW FULL COLUMNS FROM ".$table." WHERE Extra!='auto_increment' ";
 	$excute = mysqli_query($conn, $sql);
 	while ($instanc = mysqli_fetch_object($excute)){
