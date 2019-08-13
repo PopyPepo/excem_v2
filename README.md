@@ -27,11 +27,6 @@
 ไฟล์ ./conf/_connect.php บรรทัดที่ 2-5 แก้ไขการเชื่อมต่อฐานข้อมูล
 	
 	<?php
-	error_reporting(E_ALL);
-	ob_start();
-	ini_set('display_errors', 1);
-	date_default_timezone_set("Asia/Bangkok");
-
 	$servername = "localhost";		//ชื่อ database server 
 	$database = "database_name";	//ชื่อฐานข้อมูล
 	$username = "username";			//ชื่อผู้ใช้เข้าสู่ฐานข้อมูล
