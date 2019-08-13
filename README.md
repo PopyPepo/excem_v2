@@ -1,5 +1,6 @@
 # example_v2
 ไฟล์ .htaccess บรรทัดที่ 3 และ 7 แก้ไข ชื่อโฟลเดอร์โปรเจค
+
 	<IfModule mod_rewrite.c>
 		RewriteEngine On
 		RewriteBase /ชื่อโฟลเดอร์โปรเจค/
