@@ -1,4 +1,5 @@
 # example_v2
+เปลี่ยนชื่อไฟล์ x.htaccess .htaccess (ลบ x ออก ให้เหลือแค่ .htaccess)
 ไฟล์ .htaccess บรรทัดที่ 3 และ 7 แก้ไข ชื่อโฟลเดอร์โปรเจค
 
 	<IfModule mod_rewrite.c>
